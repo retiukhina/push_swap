@@ -6,22 +6,11 @@
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 15:23:20 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 18:15:54 by taretiuk         ###   ########.fr       */
+/*   Updated: 2024/07/08 13:55:27 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
-/*Function to print stack*/
-void	print_stack(t_stack *stack)
-{
-	while (stack != NULL)
-	{
-		ft_printf("%d ", stack->data);
-		stack = stack->next;
-	}
-	ft_printf("\n");
-}
 
 int	check_number_arguments(int argc, char **array)
 {
@@ -74,7 +63,5 @@ int	main(int argc, char **argv)
 		choose_sort(&stack_a, &stack_b);
 	}
 	free_stack(&stack_a);
-	// ft_printf("Main\n");
-	// print_stack(stack_a);
 	return (0);
 }

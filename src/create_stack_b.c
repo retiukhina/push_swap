@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_stack_b.c                                     :+:      :+:    :+:   */
+/*   create_stack_b.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/18 09:45:55 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 17:37:32 by taretiuk         ###   ########.fr       */
+/*   Created: 2024/07/08 14:09:52 by taretiuk          #+#    #+#             */
+/*   Updated: 2024/07/08 14:09:55 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ bool	push(t_stack **stack, int value)
 
 bool	pop(t_stack **stack, int *value)
 {
-	t_stack *temp;
+	t_stack	*temp;
 
 	if (!*stack)
 	{
@@ -42,7 +42,7 @@ bool	pop(t_stack **stack, int *value)
 	return (true);
 }
 
-int	push_stack_b(t_stack **stack_a, t_stack **stack_b)
+int	create_stack_b(t_stack **stack_a, t_stack **stack_b)
 {
 	int	value;
 	int	size;
@@ -57,7 +57,7 @@ int	push_stack_b(t_stack **stack_a, t_stack **stack_b)
 			write(1, "pb\n", 3);
 			size--;
 		}
-		else 
+		else
 		{
 			ft_printf("Error\n");
 			free_stack(stack_b);

@@ -1,11 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   operations_stack_b.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/08 12:19:19 by taretiuk          #+#    #+#             */
+/*   Updated: 2024/07/08 13:59:00 by taretiuk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/push_swap.h"
 
 void	rb(t_stack **stack)
 {
-    if (*stack == NULL || (*stack)->next == NULL)
-	{
-		return ;
-	}
 	t_stack	*first;
 	t_stack	*current;
 
@@ -23,10 +31,6 @@ void	rb(t_stack **stack)
 
 void	rrb(t_stack **stack)
 {
-    if (*stack == NULL || (*stack)->next == NULL)
-	{
-		return ;
-	}
 	t_stack	*second_last;
 	t_stack	*last;
 

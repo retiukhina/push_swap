@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations.c                                       :+:      :+:    :+:   */
+/*   operations_stack_a.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 13:00:18 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 19:24:24 by taretiuk         ###   ########.fr       */
+/*   Updated: 2024/07/08 13:58:18 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 
 void	sa(t_stack **stack)
 {
-	if (*stack == NULL || (*stack)->next == NULL)
-	{
-		/*+ handle error*/
-		return ;
-	}
 	t_stack	*first_node;
 	t_stack	*second_node;
 
@@ -32,10 +27,6 @@ void	sa(t_stack **stack)
 
 void	rra(t_stack **stack)
 {
-	if (*stack == NULL || (*stack)->next == NULL)
-	{
-		return ;
-	}
 	t_stack	*second_last;
 	t_stack	*last;
 
@@ -54,10 +45,6 @@ void	rra(t_stack **stack)
 
 void	ra(t_stack **stack)
 {
-	if (*stack == NULL || (*stack)->next == NULL)
-	{
-		return ;
-	}
 	t_stack	*first;
 	t_stack	*current;
 

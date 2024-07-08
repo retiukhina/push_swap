@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_3.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/08 12:19:45 by taretiuk          #+#    #+#             */
+/*   Updated: 2024/07/08 14:25:48 by taretiuk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/push_swap.h"
 
 void	sort_3(t_stack **stack_a)
@@ -22,7 +34,6 @@ void	sort_3(t_stack **stack_a)
 	}
 	else if ((first_num < second_num) && (second_num > third_num))
 	{
-		
 		sa(stack_a);
 		ra(stack_a);
 	}

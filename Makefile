@@ -6,7 +6,7 @@
 #    By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/08 14:14:04 by taretiuk          #+#    #+#              #
-#    Updated: 2024/05/18 09:54:16 by taretiuk         ###   ########.fr        #
+#    Updated: 2024/07/08 14:39:49 by taretiuk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME	= push_swap
 LIBFT	= ./libft/libft.a
 
 SRCS 	= src/main.c\
+					src/convert_to_number.c\
 					src/create_stack_a.c\
 					src/if_sorted.c\
 					src/choose_sort.c\
@@ -21,16 +22,16 @@ SRCS 	= src/main.c\
 					src/sort_3.c\
 					src/operations_stack_a.c\
 					src/operations_stack_b.c\
-					src/push_stack_b.c\
-					src/push_stack_a.c\
+					src/create_stack_b.c\
+					src/sort_stack_a.c\
 					src/calculate_cost.c\
 					src/find_index.c\
 					src/find_min_max.c\
 					src/find_target_index.c\
-					src/push_cheapest_node.c\
+					src/push_node.c\
 					src/final_rotation.c\
 					src/free_memory_functions.c
-					
+
 OBJS 	= ${SRCS:.c=.o}
 
 HEADER	= -I include

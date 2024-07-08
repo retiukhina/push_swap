@@ -6,7 +6,7 @@
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 13:33:22 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 13:26:57 by taretiuk         ###   ########.fr       */
+/*   Updated: 2024/07/08 13:54:20 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	list_size(t_stack *stack, int *out_size)
 {
-	int	i;
+	int		i;
 	t_stack	*ptr;
 
 	if (!stack)
@@ -23,7 +23,7 @@ int	list_size(t_stack *stack, int *out_size)
 	}
 	i = 0;
 	ptr = stack;
-	while(ptr != NULL)
+	while (ptr != NULL)
 	{
 		ptr = ptr->next;
 		i++;

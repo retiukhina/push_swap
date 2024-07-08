@@ -6,7 +6,7 @@
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 11:39:07 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 09:03:54 by taretiuk         ###   ########.fr       */
+/*   Updated: 2024/07/08 13:52:56 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 bool	if_sorted(t_stack *stack)
 {
-	t_stack *ptr;
-	
+	t_stack	*ptr;
+
 	if (stack == NULL)
 	{
 		return (false);

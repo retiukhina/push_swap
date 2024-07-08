@@ -6,53 +6,11 @@
 /*   By: taretiuk <taretiuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 16:33:30 by taretiuk          #+#    #+#             */
-/*   Updated: 2024/05/18 09:05:26 by taretiuk         ###   ########.fr       */
+/*   Updated: 2024/07/08 12:57:18 by taretiuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
-bool	check_long_bounderies(long int result)
-{
-	
-	if ((result > LONG_MAX || result < LONG_MIN)
-		|| (result > INT_MAX || result < INT_MIN))
-	{
-		return (false);
-	}
-	return (true);
-}
-	
-bool	ft_atol(const char *str, long *num)
-{
-	long	result;
-	int		sign;
-
-	sign = 1;
-	result = 0;
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-' || *str == '+')
-	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
-	}
-	while (*str)
-	{
-		if (!ft_isdigit(*str))
-			return (false);
-		result = (*str - '0') + (result * 10);
-		str++;
-	}
-	result *= sign;
-	if (!check_long_bounderies(result))
-	{
-		return (false);
-	}
-	*num = result;
-	return (true);
-}
 
 bool	if_dubles(t_stack *stack)
 {
@@ -67,14 +25,14 @@ bool	if_dubles(t_stack *stack)
 			{
 				return (false);
 			}
-		tmp = tmp->next;
+			tmp = tmp->next;
 		}
 		stack = stack->next;
 	}
 	return (true);
 }
 
-t_stack		*last_node(t_stack *stack)
+t_stack	*last_node(t_stack *stack)
 {
 	if (!stack)
 	{
