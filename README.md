@@ -1,5 +1,7 @@
-The purpose of a project:
-a program named push_swap takes as an argument the stack a formatted as a list of integers. The first argument should be at the top of the stack.
+This program sort data on a stack, with a limited set of instructions, using
+the lowest possible number of actions. To succeed the program have to manipulate various
+types of algorithms and choose the most appropriate solution (out of many) for an
+optimized data sorting.
 
 To compile:
 make
